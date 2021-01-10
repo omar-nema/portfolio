@@ -12,8 +12,9 @@
   <div class="nav" id="nav">
     <a class="nav-link active" href="#one">Tags</a>
     <a class="nav-link" href="#two">Context</a>
-    <a class="nav-link" href="#design">Demo</a>
-    <a class="nav-link" href="#three">Process</a>
+    <a class="nav-link" href="#three">Demo</a>
+    <a class="nav-link" href="#four">Related Work</a>
+    <a class="nav-link" href="#five">Process</a>
   </div>
   <div class="container">
     <a class="back-btn" href="../../">
@@ -41,7 +42,7 @@
       <header class="block-header" id="context"><span>Context</span></header>
       <div class="block-text">
           <p>
-            Download your most revealing, personal moments. Share them with a machine. Now: remove yourself from the picture. outside of your body, your narrative now stands as text. The machine explains your story.
+            Download your most revealing, personal moments. Share them with a machine. Now: remove yourself from the picture.Ooutside of your body, your narrative now stands as text. The machine explains your story.
             <br><br>
             'Thought Parser' is intended to reveal stories that lie hidden and interwoven between individual journal entries. <strong>The project holds two years of journal content, consumed and visualized by an algorithm.</strong>
           </p>
@@ -52,28 +53,41 @@
       <header class="block-header" id="context"><span>Demo</span></header>
       <div class="block-text">
           <p>
-            Due to the personal nature of this project, I've opted to include a video demo, rather than a direct weblink. 
+            Due to the personal nature of this project, I've opted to include a video demo, rather than a direct weblink. Additionally, I've whited out most of my journal text.
           </p>
       </div>
 
       <div class="block-image-container video-cont">
-        <img data-fancybox data-src="./visuals/blackbox.mp4" src="./visuals/blackbox-recording-prev.PNG" class="block-video"/>
+        <img data-fancybox data-src="./thought-parser.mp4" src="./thought-parser-prev.PNG" class="block-video"/>
     </div>
     </section>
 
-    
     <section class="block" id="four">
+      <header class="block-header" id="context"><span>Related Work</span></header>
+      <div class="block-text">
+          <p>
+            This project is of one two pieces exploring mediated self-expression. The other - 'Floating Thoughts' - similarly displays segments of my journal. In 'Floating Thoughts', the form and content of journal snippets are representative of how I view myself.
+            <br><br>
+            Juxtaposed, these two pieces question the process of developing narratives. The information we share with others - in telling our own stories - is structured. Both algorithm and human undergo similar processes of categorization. Yet so much meaning lies in the individual experiences and data that we do not share. These pieces thus break the narrative apart into individual elements, and invite the viewer to question human bias in constructing stories.
+          </p>
+      </div>
+    </section>    
+
+    
+    <section class="block" id="five">
       <header class="block-header" id="context"><span>Process</span></header>
       <div class="block-text">
         <p class="block-subheader">Proof of Concept</p>
         <p>
-          Thought Parser was built from the ground-up in code. The underlying dataset - my journal - was fed as a simple text file. Using this text file, I first experimented with methods to ingest thousands of words in a performant manner. I created a backend server (in node.js) to read and parse the text file. Within the node.js server, I tested out a number of libraries for parsing text and discerning structured information. I compared each library's performance on a small, but meaningful segment of text (a portion of my journal that represented a cohesive narrative). Compromise.js fared well on my quick tests, pulling out a number of coherent phrases. I constrained my project to use this library, and focused on refining the visual.
+          Thought Parser was built from the ground-up in code. The underlying dataset - my journal - was fed as a simple text file. Using this text file, I first experimented with methods to ingest thousands of words in a performant manner. I created a backend server (in node.js) to read and parse the text file. Within the node.js server, I tested out a number of libraries for parsing text and discerning structured information. I compared each library's performance on a small, but meaningful segment of text. Compromise.js fared well on my quick tests, pulling out a number of coherent phrases. I constrained my project to use this library, and focused on refining the visual.
         </p>
       </div>
       <div class="block-text">
         <p class="block-subheader">Visual Experimentation</p>
         <p>
-          Visually, I experimented with two main approaches. In the first iteration, I emulated the process of writing with an animation. Words were drawn on the page gradually. My initial aim was to take the viewer through the process of writing, while having the algorithm provide commentary. I found myself drawn to the end result, however, rather than the animation. Seeing a full year of writing laid out and parsed was powerful. I felt vulnerable and exposed. Exploring the resulting visual, I was able to find a number of patterns in my own thinking. I thus re-worked the visual to its current form - an exploratory tool for navigating patterns in thought, and uncovering honest, vulnerable stories.
+          Visually, I experimented with two main approaches. In the first iteration, I emulated the process of writing with an animation. Words were drawn on the page gradually. My initial aim was to take the viewer through the process of writing, while having the algorithm provide commentary. I found myself drawn to the end result, however, rather than the animation. 
+          <br><br>
+          Seeing a full year of writing laid out and parsed was powerful. I felt vulnerable and exposed. Exploring the resulting visual, I was able to find a number of patterns in my own thinking. I thus re-worked the visual to its current form - an exploratory tool for navigating patterns in thought, and uncovering honest, vulnerable stories.
         </p>
       </div>   
     </section>    
