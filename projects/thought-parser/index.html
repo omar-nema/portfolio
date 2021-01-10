@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>thought parser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="thought parser ">
+    <link rel="stylesheet" type="text/css" href="../project-assets/css/project-styles.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+
+<body>
+  <div class="nav" id="nav">
+    <a class="nav-link active" href="#one">Tags</a>
+    <a class="nav-link" href="#two">Context</a>
+    <a class="nav-link" href="#design">Demo</a>
+    <a class="nav-link" href="#three">Process</a>
+  </div>
+  <div class="container">
+    <a class="back-btn" href="../../">
+      < back
+    </a>
+    <section class="intro block" id="one">
+      <div class="intro-text block-text">
+          <div class="intro-prompt"><strong>Thought Parser</strong>
+          </div>
+          <p>
+            <span>Affiliation:</span> Independent
+            <br>
+            <span>Type:</span> Web application
+            <br>
+            <span>Role:</span> Concept, design, development 
+            <br>
+            <span>Tech:</span> node.js, d3.js, compromise.js
+ 
+          </p>
+      </div>
+    </section>
+
+    
+    <section class="block" id="two">
+      <header class="block-header" id="context"><span>Context</span></header>
+      <div class="block-text">
+          <p>
+            Download your most revealing, personal moments. Share them with a machine. Now: remove yourself from the picture. outside of your body, your narrative now stands as text. The machine explains your story.
+            <br><br>
+            'Thought Parser' is intended to reveal stories that lie hidden and interwoven between individual journal entries. <strong>The project holds two years of journal content, consumed and visualized by an algorithm.</strong>
+          </p>
+      </div>
+    </section>
+
+    <section class="block" id="three">
+      <header class="block-header" id="context"><span>Demo</span></header>
+      <div class="block-text">
+          <p>
+            Due to the personal nature of this project, I've opted to include a video demo, rather than a direct weblink. 
+          </p>
+      </div>
+
+      <div class="block-image-container video-cont">
+        <img data-fancybox data-src="./visuals/blackbox.mp4" src="./visuals/blackbox-recording-prev.PNG" class="block-video"/>
+    </div>
+    </section>
+
+    
+    <section class="block" id="four">
+      <header class="block-header" id="context"><span>Process</span></header>
+      <div class="block-text">
+        <p class="block-subheader">Proof of Concept</p>
+        <p>
+          Thought Parser was built from the ground-up in code. The underlying dataset - my journal - was fed as a simple text file. Using this text file, I first experimented with methods to ingest thousands of words in a performant manner. I created a backend server (in node.js) to read and parse the text file. Within the node.js server, I tested out a number of libraries for parsing text and discerning structured information. I compared each library's performance on a small, but meaningful segment of text (a portion of my journal that represented a cohesive narrative). Compromise.js fared well on my quick tests, pulling out a number of coherent phrases. I constrained my project to use this library, and focused on refining the visual.
+        </p>
+      </div>
+      <div class="block-text">
+        <p class="block-subheader">Visual Experimentation</p>
+        <p>
+          Visually, I experimented with two main approaches. In the first iteration, I emulated the process of writing with an animation. Words were drawn on the page gradually. My initial aim was to take the viewer through the process of writing, while having the algorithm provide commentary. I found myself drawn to the end result, however, rather than the animation. Seeing a full year of writing laid out and parsed was powerful. I felt vulnerable and exposed. Exploring the resulting visual, I was able to find a number of patterns in my own thinking. I thus re-worked the visual to its current form - an exploratory tool for navigating patterns in thought, and uncovering honest, vulnerable stories.
+        </p>
+      </div>   
+    </section>    
+
+
+  </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script src="../project-assets/js/projects.js"></script>
+
+</html>
