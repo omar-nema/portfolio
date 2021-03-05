@@ -14,6 +14,7 @@
     <a class="nav-link active" href="#one">Overview</a>
     <a class="nav-link" href="#two">Concept</a>
     <a class="nav-link" href="#three">Demo</a>
+    <a class="nav-link" href="#four">Tech Details</a>
   </div>
 
 
@@ -29,7 +30,7 @@
           <p style="line-height: 1.3rem">
             <span>Affiliation:</span> Personal project
             <br>
-            <span>Product Type:</span> Chrome Extension
+            <span>Product Type:</span> Chrome Web Extension (Desktop Only)
             <br>
             <span>Role:</span> Concept, design, development
             <br>
@@ -43,16 +44,14 @@
       <header class="block-header"><span>Concept</span></header>
       <div class="block-text ">
         <p>
-          I'm often taken aback when watching a stranger use social media on their phone. From a distance, it's easy to see the dull trance that someone can fall into when using a social media platform. Platforms like Instagram are designed for breadth, not depth. We are encouraged to consume as much content as possible.
+          I'm often taken aback when watching a stranger use social media on their phone. From a distance, it's easy to see the dull trance that someone can fall into when using a social media platform - scrolling mindlessly, and endlessly to pass time. Social media platforms like Instagram are designed for breadth, not depth. We are encouraged to consume as much content as possible (to maximize ad revenue);
           <br><br>
-          Although I fall into the same mindless trance when using social media, I am unable to really *see* what my browsing activity looks like. I see, but I cannot see myself see. And so I continue to consume.
+          Although I fall into the same mindless trance when using social media, I am unable to really *see* what my browsing activity looks like from a detached perspective. I hold a double standard - judging others for mindlessly consuming, and yet engaging in the same patterns on my own. I see, but I cannot see myself see. And so I continue to consume.
           <br><br>
-          This project is an attempt to make the viewer aware of their own browsing patterns, and expose the power the attention economy can hold. The process of developing this project - viewing Instagram and my personal browsing activity over and over - has allowed me to internalize my own browsing habits (suffice to say, I'm taking a break from social media).
+          This project is an attempt to make the viewer aware of their own browsing patterns, and expose the power the attention economy can hold over our actions. The process of developing this project - viewing Instagram and my personal browsing activity over and over - has allowed me to internalize my own browsing habits. I've become acutely aware of how quickly I scroll through content, and how little information I process at a deep, meaningful level. Suffice to say, I'm taking a break from Instagram.
         </p>
       </div>
    
-
-          
     </section>
 
     
@@ -66,12 +65,28 @@
         </p>
       </div>
       
-
-      
       <div class="block-image-container video-cont">
         <img data-fancybox data-src="./visuals/demoVid.mp4" src="./visuals/demoPrev.png" class="block-video"/>
     </div>
       
+    </section>
+
+
+    <section class="block" id="four">
+      <header class="block-header"><span>Technical Details</span></header>
+      <div class="block-text ">
+        <p>
+          'Disembodied Browsing' was built using vanilla javascript/html/css, and Google's Chrome web extension API. The extension watches for the Instagram URL, and  injects a custom 'content script', along with a custom stylesheet if the URL matches. Note that the extension only works with Desktop devices (not mobile-friendly.)
+        </p>
+      <p>
+        The content script record all scrolling activity (position and time) into an array that is stored in cache for the duration of a browsing session. When prompted by the viewer, the content script will also take over the viewer's scrolling activity and play it back. The custom stylesheet is responsible for overriding the Instagram header, and instead placing action buttons to navigate the extension. See code <a href="https://github.com/omar-nema/parsons-big-tech">here</a>.
+      </p>
+
+        <p>
+          Note that the extension only works with the landing page of Instagram.com. Clicking into other websites or subdomains will deactivate the extension. 
+        </p>
+      </div>
+   
     </section>
 
 

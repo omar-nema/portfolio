@@ -1,1 +1,1 @@
-py -m http.server 8888
+py -m http.server 8000
