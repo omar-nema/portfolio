@@ -1,7 +1,7 @@
 id,title,description,tag-datavis,tag-art,tag-product,year-2015,year-2017,year-2018,year-2019,year-2020,year-2021,date-desc,url,datesort,other,protected
 3,Blackbox,Anonymous recording exchange app,0,1,1,0,0,0,1,0,0,2019,../projects/Blackbox/index.html,2019,,0
-4,Thought Parser,"Linear journal, consumed and visualized by an algorithm",1,1,0,0,0,0,1,0,0,2019,../projects/thought-parser/,2019,,0
-5,Floating Thoughts,"Nonlinear journal, categorized, and visualized manually",1,1,0,0,0,1,0,0,0,2018,http://omarnema.com/floating-thoughts/index.html,2018,,0
+4,Thought Parser,"My journal, consumed and visualized by an algorithm",1,1,0,0,0,0,1,0,0,2019,../projects/thought-parser/,2019,,0
+5,Floating Thoughts,Nonlinear writing collage.,1,1,0,0,0,1,0,0,0,2018,http://omarnema.com/floating-thoughts/index.html,2018,,0
 6,Neuroengineering Thesis,"Undergrad thesis, simulating spinal cord simulation in primates",0,0,1,1,0,0,0,0,0,2015,../projects/thesis/,2015,,0
 7,Referral Explorer,Visualization of medical referral patterns,1,0,0,0,1,0,0,0,0,2017,../projects/referral-network/,2018,,0
 8,Computational Sketches,A series of two-hour sketches made with code,0,1,0,0,0,0,0,1,0,2020,../projects/comp-form-gallery/,2020,,0
